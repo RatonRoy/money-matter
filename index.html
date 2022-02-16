@@ -9,7 +9,65 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+<!--start of the  header sections  -->
+<header>
+	<h1 class="title"> Matter of the Money </h1>
+	<!-- main container  -->
+	<section class="sections-container">
+		<!-- images container  -->
+		<div class="img-container">
+			<img src="img/money03.jpg" alt="" srcset="" height=""> 
+		</div>
+		<!--end of images container  --> 
+		<!-- start of the main money calculation section -->
+		<main class="money-calculation-container">
+			<form action="">
+				<fieldset>
+					<legend>Calculation Of Money</legend> 
+					<h3 class="sub-title">Incomes</h3>
+					<p>
+						<label for="income"> Income: </label> 
+						<input type="text" name="income" id=" income">
+					</p>
+					<h3 class="sub-title">Expenses</h3>
+					<p>
+						<label for="food"> Food: </label> 
+						<input type="text" name="food" id="food">
+					</p>
+					<p>
+						<label for="rent"> Rent: </label> 
+						<input type="text" name="foorent" id="rent">
+					</p>
+					<p>
+						<label for="colthes"> colthes: </label> 
+						<input type="text" name="colthes" id="colthes">
+					</p>
+					<p>
+						<button id="calculation" class="btn">Calculation</button>
+					</p>
+					<h3 class="sub-title">Totall Expenses : <span id="totall-expenses">1000</span></h3>
+					<h3 class="sub-title">Balace : <span id="remain-balance">1000</span></h3>
+					<p>
+						<label for="save"> save: </label> 
+						<input type="text" name="save" id="save" class="save-input"> 
+						<span class="percent">%</span>
+						<button class="btn save-btn" id="saving">save</button>
+					</p>
+					<h3 class="sub-title"> Saving Amount : <span id="saving-amount">2000</span></h3>
+					<h3 class="sub-title"> Remaining Balace : <span id="Remaining-Balace">2000</span></h3>
+
+				</fieldset>
+			</form>
+			<div class="noti-container">
+				<p class="notification">Please input positive number don't type text </p>
+			<p class="notification">Please input positive number don't type negative number </p>
+			</div>
+		</main>
+		<!-- end of the start the main money calculation section -->
+	</section>
+	<!-- end of the  main container  -->
+</header>
+<!--- end of the  header sections  -->
 <!-- main js file -->
 <script src="js/app.js"></script>
 </body>

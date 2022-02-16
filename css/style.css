@@ -1,0 +1,142 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap");
+/* css variables */
+:root {
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+}
+/* reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body */
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--mainBlack);
+  background: var(--offWhite);
+  line-height: 1.4;
+  font-size: 1rem;
+}
+/* ********** start of global styles ********* */
+h3{
+	font-family: "Poppins", sans-serif;
+    margin: 0.5rem 0;
+    letter-spacing: var(--mainSpacing);
+	font-size: 1rem;
+}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border-radius:0.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none; 
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+}
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	letter-spacing: 0.5rem;
+	padding: 1rem 0;
+  }
+  img{
+	width: 100%;
+	display: block;
+  /* height: 600; */
+  }
+  p, .sub-title{
+	  text-align: center;
+  }
+  p{
+    padding: 0.5rem 1rem;
+  }
+  input{
+    padding: 0.3rem 1.5rem;
+    width: 50%;
+    outline-style: none;
+    margin-left: 1rem;
+    background-color: var(--mainGrey); 
+    font-size: 1.5rem;
+  }
+  label{
+    font-size: 1.5rem;
+    /* padding: 0.3rem 1.5rem; */
+  }
+/* ********** end of global styles ********* */
+header{
+   /* max-height: 100vh; */
+}
+.sections-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85vw;
+	margin: 0 auto;
+}
+.img-container{
+	width: 40%;
+}
+.money-calculation-container{
+	width: 55%;
+}
+.save-btn{
+  padding: 0.5rem 1rem;
+}
+.save-input{
+  width: 20%;
+}
+.noti-container{
+  display: none;
+}
+/* responsive design  */
+/* start of the mobile design  */
+@media only screen and (max-width: 600px) {
+  .sections-container{
+    display: block;
+    width: 90vw;
+	  margin: 0 auto;
+  }
+  .img-container{
+    width: 100%;
+  }
+  .money-calculation-container{
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .save-input{
+    width: 20%;
+  }
+}
+/* end of the mobile design  */
+/* start of the medium size devices design  */
+@media only screen and (max-width: 768px) {
+  .sections-container{
+    display: block;
+    width: 80vw;
+	  margin: 0 auto;
+  }
+  .img-container{
+    width: 100%;
+  }
+  .money-calculation-container{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .save-input{
+    width: 30%;
+  }
+}
+/* end  of the medium size devices design  */
+/* end of the responsive design  */
