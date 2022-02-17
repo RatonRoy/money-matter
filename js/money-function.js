@@ -47,6 +47,8 @@ document.getElementById('calculation').addEventListener('click', function () {
 	// this is the error message code if expenses become bigger than income 
 	if (totallExpenses > incomeAmount) {
 		errorMessage('claculation-noti');
+		document.getElementById('totall-expenses').innerText = '000';
+		document.getElementById('balance').innerText = '000';
 		return 0;
 	}
 	const balanceAfterExpenses = incomeAmount - totallExpenses;
@@ -70,6 +72,8 @@ document.getElementById('saving').addEventListener('click', function () {
 	// this is the error message code if the users input value becomes less the 0 
 	if (savingPercent < 0) {
 		errorMessage('noti-number');
+		document.getElementById('saving-amount').innerText = '000';
+		document.getElementById('remaining-balace').innerText = '000';
 		return 0;
 	}
 	const savingAmount = savingPercent * incomeAmount / 100;
