@@ -97,7 +97,14 @@ header{
 .save-input{
   width: 20%;
 }
+.onti-calculation{
+  display: none;
+  color: red;
+}
 .noti-container{
+  color: red;
+}
+.notification-one, .notification-two{
   display: none;
 }
 /* responsive design  */
