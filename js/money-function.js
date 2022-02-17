@@ -80,6 +80,8 @@ document.getElementById('saving').addEventListener('click', function () {
 	// this is the error message code if saving become bigger than existing balance
 	if (savingAmount > remainingBalaceAmount) {
 		errorMessage('saving-noti');
+		document.getElementById('saving-amount').innerText = '000';
+		document.getElementById('remaining-balace').innerText = '000';
 		return 0;
 	}
 	updateAmount('saving-amount', savingAmount);
