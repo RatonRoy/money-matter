@@ -107,6 +107,10 @@ header{
 .notification-one, .notification-two{
   display: none;
 }
+.noti-saving{
+  color: red;
+  display: none;
+}
 /* responsive design  */
 /* start of the mobile design  */
 @media only screen and (max-width: 600px) {
